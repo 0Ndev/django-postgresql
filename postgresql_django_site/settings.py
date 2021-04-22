@@ -29,7 +29,8 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'https://webdev-cheatsheets.herokuapp.com']
+ALLOWED_HOSTS = ['webdev-cheatsheets.herokuapp.com',
+                 'https://webdev-cheatsheets.herokuapp.com', 'localhost', ]
 
 # DISABLE_COLLECTSTATIC = 1
 
