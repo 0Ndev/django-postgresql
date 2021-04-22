@@ -31,7 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 'https://webdev-cheatsheets.herokuapp.com']
 
-DISABLE_COLLECTSTATIC = 1
+# DISABLE_COLLECTSTATIC = 1
 
 # Application definition
 
@@ -88,6 +88,7 @@ DATABASES = {
         'NAME': config('DATABASE_NAME'),
         'USER': config('DATABASE_USER'),
         'PASSWORD': config('DATABASE_PASSWORD'),
+        'HOST': config('DATABASE_URL'),
         'HOST': 'localhost',
         'PORT': '5432',
     }
