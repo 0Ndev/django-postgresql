@@ -97,8 +97,9 @@ WSGI_APPLICATION = 'postgresql_django_site.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.config(),
+    'default': dj_database_url.config(default='postgres://localhost')
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
