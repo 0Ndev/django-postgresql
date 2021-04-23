@@ -31,7 +31,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['webdev-cheatsheets.herokuapp.com',
-                 'https://webdev-cheatsheets.herokuapp.com', 'localhost', ]
+                 'https://webdev-cheatsheets.herokuapp.com', 'localhost', 'http://127.0.0.1', '0.0.0.0']
 
 # DISABLE_COLLECTSTATIC = 1
 
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'basic_app',
+    # 'whitenoise.runserver_nostatic'
 ]
 
 MIDDLEWARE = [
@@ -82,9 +83,11 @@ WSGI_APPLICATION = 'postgresql_django_site.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': dj_database_url.config(default='postgres://localhost')
-}
+# DATABASES = {
+#     'default': dj_database_url.config(default='postgresql://localhost')
+# }
+
+# DATABASES = {'default': dj_database_url.config()}
 
 DATABASES = {
     'default': {
