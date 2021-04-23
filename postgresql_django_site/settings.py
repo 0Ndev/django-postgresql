@@ -31,7 +31,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['webdev-cheatsheets.herokuapp.com',
-                 'https://webdev-cheatsheets.herokuapp.com', 'localhost', 'http://127.0.0.1', '0.0.0.0']
+                 'https://webdev-cheatsheets.herokuapp.com', 'localhost', '127.0.0.1', '0.0.0.0']
 
 # DISABLE_COLLECTSTATIC = 1
 
